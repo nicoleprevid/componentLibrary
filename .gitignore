@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+.storybook-cache/
+storybook-static/
+coverage/
