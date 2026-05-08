@@ -2,6 +2,22 @@
 
 Uma biblioteca de componentes em React + TypeScript, organizada com base nos principios de Atomic Design e preparada com Vite e Storybook.
 
+## Diretrizes adotadas
+
+Esta biblioteca foi estruturada para refletir diretrizes operacionais de desenvolvimento de componentes React:
+
+- API previsivel e consistente com props semanticas e valores padrao.
+- Tipagem como contrato com TypeScript em toda a interface publica.
+- Separacao de inputs e outputs via props de entrada e callbacks de evento.
+- Estilizacao desacoplada com tokens centralizados em `src/styles/theme.css`.
+- Responsividade por padrao com `grid`, `flex`, `rem` e `clamp`.
+- Composicao de componentes em `Card` e `Modal`.
+- Separacao de logica e UI com o hook `src/components/organisms/Modal/useModal.ts`.
+- Independencia de estado global, permitindo uso isolado de cada componente.
+- HTML semantico, gerenciamento de foco, navegacao por teclado e estados acessiveis.
+- Exemplos visuais de uso e documentacao de props via Storybook autodocs.
+- Estabilidade de API com extensoes retrocompativeis, como o alias `color` em `Button`.
+
 ## Recursos
 
 - React 18 + TypeScript
@@ -24,7 +40,7 @@ import 'component-library/styles.css'
 ```
 
 ```tsx
-<Button color="primary" size="md">Clique aqui</Button>
+<Button variant="primary" size="md">Clique aqui</Button>
 ```
 
 ## Scripts
@@ -54,6 +70,15 @@ npm run dev
 ```
 
 A pagina de demonstracao fica em `src/demo/DemoPage.tsx` e apresenta exemplos basicos dos componentes da biblioteca.
+
+## Onde as diretrizes aparecem no codigo
+
+- `src/components/atoms/Button/Button.tsx`: API previsivel, tipagem, HTML semantico e estabilidade de API.
+- `src/components/atoms/Input/Input.tsx`: contrato tipado, estados acessiveis e fluxo de dados por props/callbacks.
+- `src/components/molecules/Card/Card.tsx`: composicao e semantica estrutural.
+- `src/components/organisms/Modal/Modal.tsx`: composicao, acessibilidade e separacao entre UI e regras de comportamento.
+- `src/components/organisms/Modal/useModal.ts`: gerenciamento de foco e navegacao por teclado.
+- `src/styles/theme.css` e `src/styles/demo.css`: design tokens, responsividade e flexibilidade visual.
 
 ## Estrutura do projeto
 

@@ -1,0 +1,1 @@
+{"version":3,"file":"useModal.d.ts","sourceRoot":"","sources":["../../../../src/components/organisms/Modal/useModal.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAa,MAAM,OAAO,CAAA;AAW5C,UAAU,eAAe;IACvB,SAAS,EAAE,SAAS,CAAC,cAAc,CAAC,CAAA;IACpC,IAAI,EAAE,OAAO,CAAA;IACb,OAAO,EAAE,MAAM,IAAI,CAAA;CACpB;AAED,eAAO,MAAM,QAAQ,GAAI,8BAA8B,eAAe,SA4ErE,CAAA"}

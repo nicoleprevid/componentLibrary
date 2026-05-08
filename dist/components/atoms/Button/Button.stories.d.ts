@@ -7,4 +7,5 @@ type Story = StoryObj<typeof Button>;
 export declare const Primary: Story;
 export declare const Variants: Story;
 export declare const Sizes: Story;
+export declare const Loading: Story;
 //# sourceMappingURL=Button.stories.d.ts.map

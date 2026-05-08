@@ -4,6 +4,10 @@
   line-height: 1.5;
   font-weight: 400;
 
+  /* D05: Design Tokens
+     Cores, espacamentos, sombras e raios ficam centralizados para toda a biblioteca. */
+  /* D06: Unidades Relativas
+     Os tokens de espacamento e tamanho usam `rem` para escalar melhor com o contexto tipografico. */
   --color-ink: #0c1620;
   --color-ink-muted: #3a4a5c;
   --color-surface: #ffffff;
@@ -11,15 +15,51 @@
   --color-border: #d8e0ea;
   --color-primary: #2b5cff;
   --color-primary-dark: #1840d8;
-  --color-success: #0f9d58;
-  --color-danger: #d64545;
+  --color-success: #0a7a43;
+  --color-danger: #b82f3a;
   --color-neutral: #233043;
+  --color-white: #ffffff;
+  --color-disabled-bg: #eef1f6;
+  --color-disabled-fg: #8b95a5;
 
-  --shadow-elevated: 0 18px 40px rgba(17, 24, 39, 0.12);
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --shadow-elevated: 0 1.125rem 2.5rem rgba(17, 24, 39, 0.12);
+  --shadow-soft: 0 0.75rem 1.5rem rgba(17, 24, 39, 0.06);
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
   --transition-fast: 150ms ease;
+  --focus-ring: 0 0 0 0.1875rem rgba(43, 92, 255, 0.2);
+  --focus-outline: 0.1875rem solid rgba(43, 92, 255, 0.3);
+
+  --intent-primary-bg: var(--color-primary);
+  --intent-primary-bg-hover: var(--color-primary-dark);
+  --intent-primary-fg: var(--color-white);
+  --intent-primary-border: rgba(43, 92, 255, 0.35);
+  --intent-primary-subtle: rgba(43, 92, 255, 0.08);
+
+  --intent-neutral-bg: var(--color-neutral);
+  --intent-neutral-bg-hover: #17202d;
+  --intent-neutral-fg: var(--color-white);
+  --intent-neutral-border: rgba(35, 48, 67, 0.35);
+  --intent-neutral-subtle: rgba(35, 48, 67, 0.08);
+
+  --intent-success-bg: var(--color-success);
+  --intent-success-bg-hover: #086736;
+  --intent-success-fg: var(--color-white);
+  --intent-success-border: rgba(10, 122, 67, 0.35);
+  --intent-success-subtle: rgba(10, 122, 67, 0.1);
+
+  --intent-danger-bg: var(--color-danger);
+  --intent-danger-bg-hover: #982633;
+  --intent-danger-fg: var(--color-white);
+  --intent-danger-border: rgba(184, 47, 58, 0.35);
+  --intent-danger-subtle: rgba(184, 47, 58, 0.1);
 }
 
 * {
